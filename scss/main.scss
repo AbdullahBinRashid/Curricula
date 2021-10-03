@@ -1,0 +1,24 @@
+@use "components/" as *;
+@import "header.scss";
+
+*, *::before, *::after {box-sizing: border-box}
+
+html {scroll-behavior: smooth;}
+
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+.hero {
+    height: 100vh;
+
+    h1, h2 {
+        text-align: center;
+    }
+}

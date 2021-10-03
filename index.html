@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+        <title>Curricula - For courses and resources</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+    <body>
+        <header id="header"></header>
+
+        <main>
+            <section id="hero">
+                <h1>Curricula</h1>
+                <h2>For courses and resources</h2>
+                <p>Lahore Board only for now</p> 
+            </section>
+
+            <section class="classes">
+                <h2>Select yours class below:</h2>
+                <ul>
+                    <li><button onclick="switchTo9th(), classIsSelected(), explainBooks()" class="btn">Class-9</button></li>
+                    <li><button onclick="switchTo10th(), classIsSelected(), explainBooks()" class="btn">Class-10</button></li>
+                    <li><button onclick="switchTo11th(), classIsSelected(), explainBooks()" class="btn">Class-11</button></li>
+                    <li><button onclick="switchTo12th(), classIsSelected(), explainBooks()" class="btn">Class-12</button></li>
+                </ul>
+            </section>
+
+
+            <section class="past-papers">
+
+                <h2 class="section-header">Past Papers</h2>
+                <p class="display-text">Please Select your class!</p>
+
+                <div class="class-info">
+                    <p>Following are the past papers of class <span class="displayed-class"></span>th:</p>
+                    <ul>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Chemistry</a></li>
+                        <li><a href="">Physics</a></li>
+                        <li><a href="">Mathematics</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">Urdu</a></li>
+                        <li><a href="">Pakistan Studies (Mutaliya Pakistan)</a></li>
+                        <li><a href="">Islamiat</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            <section class="booksEl">
+                <h2 class="section-header">Books</h2>
+
+                <p class="display-text">Please Select your class!</p>
+
+                <div class="class-info">
+                    <p>Books for class <span class="displayed-class"></span>th are available:</p>
+                    <ul>
+                        <li><a href="" id="biology-book" class="books">Biology</a></li>
+                        <li><a href="" id="chemistry-book" class="books">Chemistry</a></li>
+                        <li><a href="" id="physics-book" class="books">Physics</a></li>
+                        <li><a href="" id="mathematics-book" class="books">Mathematics</a></li>
+                        <li><a href="" id="english-book" class="books">English</a></li>
+                        <li><a href="" id="urdu-book" class="books">Urdu</a></li>
+                        <li><a href="" id="pak-std-book" class="books">Pakistan Studies (Mutaliya Pakistan)</a></li>
+                        <li><a href="" id="islamiat-book" class="books">Islamiat</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer id="footer"></footer>
+
+        <script src="/js/main.js"></script>
+    </body>
+
+</html>
