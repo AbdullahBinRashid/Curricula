@@ -1,5 +1,7 @@
 @use "components/" as *;
 @import "header.scss";
+@import "components/button";
+
 
 *, *::before, *::after {box-sizing: border-box}
 
@@ -15,10 +17,31 @@ header {
     margin-bottom: 5rem;
 }
 
+ul {
+    list-style: none;
+}
+
+.classes {
+    h2 {
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .hero {
     height: 100vh;
 
     h1, h2 {
         text-align: center;
+    }
+}
+
+.booksEl {
+    a {
+        display: block;
     }
 }

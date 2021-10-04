@@ -19,7 +19,6 @@ const islamiatBookEl = document.getElementById("islamiat-book")
 
 let booksHref
 let selectedClass
-let bookNameInitials
 
 let englishMedium = "english-medium/"
 let urduMedium = "urdu-medium/"
@@ -36,17 +35,11 @@ for (let i = 0; i < textAfterClassSelectionEl.length; i++) {
 
 function switchTo9th() {
     selectedClass = 9
-}
-
-function switchTo10th() {
+} function switchTo10th() {
     selectedClass = 10
-}
-
-function switchTo11th() {
+} function switchTo11th() {
     selectedClass = 11
-}
-
-function switchTo12th() {
+} function switchTo12th() {
     selectedClass = 12
 }
 
@@ -69,34 +62,56 @@ function classIsSelected() {
 }
 
 function explainBooks() {
-    booksHref = "/books/"
+    for (let i = 0; i < booksEl.length; i++) {
+        booksEl[i].href = "https://drive.google.com/file/d/"
+        booksEl[i].target = "_blank"
+    }
 
     if (selectedClass == 9) {
-        booksHref += "9th/"
-        bookNameInitials = "9th-FullBook-"
+
+        bioBookEl.href += "1-hSeZFsd62yFbBwAKdDgdlUst-urKj27"
+        chemBookEl.href += "1Qoo2ls19Ews8s2dghNsNPtcPqxw_c1dX"
+        phyBookEl.href += "15DB0GEaz7KkWveSnHiBZGkGWkCB8lv_0"
+        mathBookEl.href += "1_Y4LkJ35IgTRnf51XOxsF1ZJn58PjlIk"
+        englishBookEl.href += "15no1eKOY7gH94yTXXhkdMsqhHYzcvPDZ"
+        urduBookEl.href += "1__j4hGOH3khqlsb3ubCPAWtbUBq4NQGi"
+        pakStdBookEl.href += "1HpTGQHEz1eFYh77Fl_JHHe90BA4YwYLG"
+        islamiatBookEl.href += "16rNZ6JpRfJUcegd_2hapnsAlwanB6Hfi"
+
     } else if (selectedClass == 10) {
-        booksHref += "10th/"
-        bookNameInitials = "10th-FullBook-"
+
+        bioBookEl.href += "Biology.pdf"
+        chemBookEl.href += "Chemistry.pdf"
+        phyBookEl.href += "Physics.pdf"
+        mathBookEl.href += "Math.pdf"
+        englishBookEl.href += "English.pdf"
+        urduBookEl.href += "Urdu.pdf"
+        pakStdBookEl.href += "Pak_std.pdf"
+        islamiatBookEl.href += "Islamiat.pdf"
+
     } else if (selectedClass == 11) {
-        booksHref += "11th/"
-        bookNameInitials = "11th-FullBook-"
+
+        bioBookEl.href += "Biology.pdf"
+        chemBookEl.href += "Chemistry.pdf"
+        phyBookEl.href += "Physics.pdf"
+        mathBookEl.href += "Math.pdf"
+        englishBookEl.href += "English.pdf"
+        urduBookEl.href += "Urdu.pdf"
+        pakStdBookEl.href += "Pak_std.pdf"
+        islamiatBookEl.href += "Islamiat.pdf"
+
     } else if (selectedClass == 12) {
-        booksHref += "12th/"
-        bookNameInitials = "12th-FullBook-"
-    }
 
-    for (let i = 0; i < booksEl.length; i++) {
-        booksEl[i].href = booksHref + englishMedium + bookNameInitials
-    }
+        bioBookEl.href += "Biology.pdf"
+        chemBookEl.href += "Chemistry.pdf"
+        phyBookEl.href += "Physics.pdf"
+        mathBookEl.href += "Math.pdf"
+        englishBookEl.href += "English.pdf"
+        urduBookEl.href += "Urdu.pdf"
+        pakStdBookEl.href += "Pak_std.pdf"
+        islamiatBookEl.href += "Islamiat.pdf"
 
-    bioBookEl.href += "Biology.pdf"
-    chemBookEl.href += "Chemistry.pdf"
-    phyBookEl.href += "Physics.pdf"
-    mathBookEl.href += "Math.pdf"
-    englishBookEl.href += "English.pdf"
-    urduBookEl.href += "Urdu.pdf"
-    pakStdBookEl.href += "Pak_std.pdf"
-    islamiatBookEl.href += "Islamiat.pdf"
+    }
 }
 
 
